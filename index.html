@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AudioClean Pro — Eliminador Inteligente de Duplicados de Audio & Auditoría Espectral</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Recupera gigabytes en tu disco y perfecciona tu biblioteca musical con AudioClean Pro. Detección de duplicados por huella acústica Chromaprint, detector de Fake FLAC por FFT y comparador A/B en vivo. 100% local y seguro.">
+  <meta name="keywords" content="limpiar musica duplicada, eliminar canciones duplicadas, huella acustica, chromaprint, fake flac, detector fake lossless, comparador ab audio, audioclean pro">
+  <meta name="author" content="AudioClean Software">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AudioClean Pro — Precisión Acústica Quirúrgica para tu Música">
+  <meta property="og:description" content="Detecta duplicados reales sin importar formato o bitrate, desenmascara falsos FLAC y escucha antes de decidir con el comparador A/B sincronizado.">
+  <meta property="og:image" content="assets/app_icon.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AudioClean Pro — Eliminador Acústico de Duplicados">
+  <meta name="twitter:description" content="El único software que audita el espectro FFT real y compara pistas A/B antes de borrar. 100% local y seguro.">
+  <meta name="twitter:image" content="assets/app_icon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/app_icon.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css?v=4">
+</head>
+<body>
+  <!-- Ambient Background Effect -->
+  <div class="ambient-glow"></div>
+
+  <!-- Floating Glass Capsule Navigation -->
+  <header class="site-header">
+    <div class="nav-capsule">
+      <a href="#" class="brand-logo">
+        <div class="brand-icon-wrap">
+          <img src="assets/app_icon.png" alt="AudioClean Pro Icon" class="brand-icon">
+        </div>
+        <span class="brand-name">AudioClean <span class="badge-pro">PRO</span></span>
+      </a>
+
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="#features" class="nav-link">Funciones</a></li>
+          <li><a href="#ab-player" class="nav-link">Comparador A/B</a></li>
+          <li><a href="#spectral" class="nav-link">Detector FFT</a></li>
+          <li><a href="#calculator" class="nav-link">Calculadora</a></li>
+          <li><a href="#pricing" class="nav-link">Precios</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#demo" class="nav-btn nav-btn-ghost trigger-demo-modal">Demo Gratis</a>
+        <a href="#pricing" class="nav-btn nav-btn-glow trigger-buy-modal" data-plan="Pro Lifetime">Comprar Pro</a>
+        <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Abrir menú de navegación">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <line x1="4" y1="7" x2="20" y2="7"/>
+            <line x1="4" y1="12" x2="20" y2="12"/>
+            <line x1="4" y1="17" x2="20" y2="17"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Overlay Drawer -->
+    <div class="mobile-nav-panel" id="mobileNavPanel">
+      <ul class="mobile-nav-links">
+        <li><a href="#features" class="mobile-nav-link">Características</a></li>
+        <li><a href="#ab-player" class="mobile-nav-link">Comparador A/B</a></li>
+        <li><a href="#spectral" class="mobile-nav-link">Detector Fake FLAC (FFT)</a></li>
+        <li><a href="#calculator" class="mobile-nav-link">Calculadora de Ahorro</a></li>
+        <li><a href="#pricing" class="mobile-nav-link">Planes de Precios</a></li>
+        <li><a href="#faq" class="mobile-nav-link">Preguntas Frecuentes</a></li>
+      </ul>
+      <div class="mobile-nav-cta">
+        <a href="#demo" class="btn btn-secondary trigger-demo-modal" style="width: 100%;">Probar Demo Gratis</a>
+        <a href="#pricing" class="btn btn-primary trigger-buy-modal" data-plan="Pro Lifetime" style="width: 100%;">Comprar Licencia Pro</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-pill">
+        <span class="pulse-dot"></span>
+        <span>MOTOR ACÚSTICO CHROMAPRINT & ESPECTRO FFT LOCAL</span>
+      </div>
+
+      <h1 class="hero-title">
+        Elimina duplicados de audio con <span class="gradient-text-cyan">precisión quirúrgica</span> y sin perder calidad
+      </h1>
+
+      <p class="hero-subtitle">
+        No confíes en simples nombres de archivo. <strong>AudioClean Pro</strong> analiza la huella acústica real de tus canciones, desenmascara falsos FLAC con análisis espectral y te permite comparar en vivo con un reproductor A/B sincronizado al milisegundo. Todo 100% offline y seguro.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#pricing" class="btn btn-primary btn-lg trigger-buy-modal" data-plan="Pro Lifetime">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          Obtener Licencia Pro — $49.99
+        </a>
+
+        <a href="#demo" class="btn btn-secondary btn-lg trigger-demo-modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Descargar Demo Gratuita
+        </a>
+      </div>
+
+      <div class="hero-trust-bar">
+        <div class="trust-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>100% Privado y Offline</span>
+        </div>
+        <div class="trust-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Protección de Copia Única</span>
+        </div>
+        <div class="trust-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Windows 10 / 11 Nativo</span>
+        </div>
+        <div class="trust-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Garantía de Devolución 30 Días</span>
+        </div>
+      </div>
+
+      <!-- App Interface Hero Mockup -->
+      <div class="hero-visualizer-wrap">
+        <div class="hero-screen-inner">
+          <div class="app-window-header">
+            <div class="window-dots">
+              <span class="window-dot dot-red"></span>
+              <span class="window-dot dot-yellow"></span>
+              <span class="window-dot dot-green"></span>
+            </div>
+            <span class="window-title">AudioClean Pro — Acoustic Engine Scanner [Streaming Mode: Active]</span>
+            <span class="window-badge">LSH INDEXED</span>
+          </div>
+
+          <!-- Dynamic Interactive Canvas -->
+          <canvas id="heroCanvas"></canvas>
+
+          <div class="canvas-overlay-stats">
+            <div class="stat-box">
+              <div class="stat-label">Velocidad de Escaneo</div>
+              <div class="stat-value cyan">350+ pistas/seg</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Caché SQLite WAL</div>
+              <div class="stat-value emerald">&lt; 0.01 ms</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Capacidad Probada</div>
+              <div class="stat-value purple">150,000+ pistas</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-label">Pérdida de Datos</div>
+              <div class="stat-value emerald">0.00% (Blindado)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive A/B Player Showcase -->
+  <section id="ab-player" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Demostración Interactiva</span>
+        <h2 class="section-title">Escucha antes de decidir con el <span class="gradient-text-cyan">Comparador A/B en Vivo</span></h2>
+        <p class="section-desc">
+          Otros programas borran a ciegas basándose en etiquetas o tamaño de archivo. AudioClean Pro te permite conmutar en tiempo real entre ambas copias manteniendo la posición exacta de reproducción para que tus propios oídos validen la calidad.
+        </p>
+      </div>
+
+      <div class="ab-showcase-card">
+        <div class="ab-controls-bar">
+          <div class="ab-playback-controls">
+            <button id="playToggleBtn" class="play-toggle-btn" title="Reproducir / Pausar">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+              </svg>
+            </button>
+            <div>
+              <div style="font-size:0.75rem; color:var(--text-dim); text-transform:uppercase;">Posición Sincronizada</div>
+              <span id="abTimeDisplay" class="ab-time-display">00:14 / 03:42</span>
+            </div>
+          </div>
+
+          <!-- Synchronized A/B Switcher -->
+          <div class="ab-switcher-group">
+            <button id="btnTrackA" class="ab-switch-btn active track-a">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Pista A: Master Lossless Genuino
+            </button>
+            <button id="btnTrackB" class="ab-switch-btn track-b">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              Pista B: Fake FLAC (Transcode 128kbps)
+            </button>
+          </div>
+        </div>
+
+        <!-- Side-by-Side Track Inspector -->
+        <div class="ab-dual-display">
+          <!-- Panel A -->
+          <div id="panelTrackA" class="track-panel is-active">
+            <div class="track-header">
+              <div>
+                <h3 class="track-title">01 - Bohemian Symphony (2024 Master)</h3>
+                <div class="track-artist">Estudio Master Original • Pista A</div>
+              </div>
+              <span class="badge-format flac">FLAC 24-BIT</span>
+            </div>
+
+            <div class="track-metrics">
+              <div class="metric-item">
+                <div class="metric-key">Frecuencia Real</div>
+                <div class="metric-val green">96.0 kHz</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-key">Bitrate Efectivo</div>
+                <div class="metric-val green">2,840 kbps</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-key">Puntaje Calidad</div>
+                <div class="metric-val green">98 / 100</div>
+              </div>
+            </div>
+
+            <div class="verdict-tag verdict-keep">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              RECOMENDACIÓN: CONSERVAR (MÁXIMA FIDELIDAD)
+            </div>
+          </div>
+
+          <!-- Panel B -->
+          <div id="panelTrackB" class="track-panel panel-b">
+            <div class="track-header">
+              <div>
+                <h3 class="track-title">01 - Bohemian Symphony (Upscaled FLAC)</h3>
+                <div class="track-artist">Copia Descargada de la Web • Pista B</div>
+              </div>
+              <span class="badge-format fake-flac">⚠️ FAKE LOSSLESS</span>
+            </div>
+
+            <div class="track-metrics">
+              <div class="metric-item">
+                <div class="metric-key">Corte Espectral</div>
+                <div class="metric-val amber">15.5 kHz (Cutoff)</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-key">Bitrate Real</div>
+                <div class="metric-val amber">128 kbps origen</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-key">Puntaje Calidad</div>
+                <div class="metric-val amber">42 / 100</div>
+              </div>
+            </div>
+
+            <div class="verdict-tag verdict-delete">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              RECOMENDACIÓN: ELIMINAR (FALSO LOSSLESS DETECTADO)
+            </div>
+          </div>
+        </div>
+
+        <!-- Real-time FFT Frequency Canvas -->
+        <div class="spectrum-canvas-wrap">
+          <div class="spectrum-canvas-title">
+            <span>AUDITORÍA ESPECTRAL FFT EN TIEMPO REAL (ANCHO DE BANDA ÚTIL)</span>
+            <span style="color:var(--cyan)">20 Hz — 22.05 kHz</span>
+          </div>
+
+          <canvas id="spectrumCanvas"></canvas>
+
+          <div class="spectrum-legend">
+            <span>20 Hz (Sub-Bass)</span>
+            <span>250 Hz (Medios)</span>
+            <span>4 kHz (Presencia)</span>
+            <span style="color:var(--amber)">16 kHz (Umbral MP3)</span>
+            <span>22 kHz (Aire Hi-Res)</span>
+          </div>
+
+          <div id="spectrumWarning" class="spectrum-warning-text" style="display:none;">
+            ⚠️ <strong>ALERTA DE SEGURIDAD AUDIOCLEAN:</strong> La Pista B fue convertida artificialmente a .flac a partir de un archivo MP3 de baja calidad (corte abrupto de energía en 15.5 kHz). AudioClean Pro previene que borres el Master original.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Spectral Rolloff Feature Explanation -->
+  <section id="spectral" class="section" style="background: rgba(13, 15, 20, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Auditoría Científica</span>
+        <h2 class="section-title">El peligro de los <span class="gradient-text-purple">"Fake FLAC"</span> que otros limpiadores ignoran</h2>
+        <p class="section-desc">
+          Muchos archivos que circulan en internet tienen extensión <code>.flac</code> o <code>.wav</code> pero fueron transcodificados desde MP3s mediocres. Un limpiador convencional borrará tu archivo original porque el falso FLAC "pesa más". AudioClean Pro examina el espectro armónico para no cometer jamás ese error.
+        </p>
+      </div>
+
+      <!-- 4 Precision Levels Grid -->
+      <div id="features" class="features-grid">
+        <div class="feature-card emerald">
+          <div class="feature-icon-wrap">💎</div>
+          <h3 class="feature-title">1. Duplicados Exactos Bit-a-Bit</h3>
+          <p class="feature-desc">
+            Coincidencia criptográfica instantánea por SHA-256 y hash de flujo PCM decodificado. Detecta archivos 100% idénticos aunque tengan nombres o carpetas totalmente distintas.
+          </p>
+          <span class="feature-badge-mini">EXACT_HASH & CANONICAL PCM</span>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">🌊</div>
+          <h3 class="feature-title">2. Huella Acústica Chromaprint</h3>
+          <p class="feature-desc">
+            Algoritmo de alineación temporal dinámica de hasta 600 frames con distancia Hamming. Identifica la misma pista musical aunque esté en MP3, FLAC, AAC o WAV con distintos bitrates.
+          </p>
+          <span class="feature-badge-mini">ACOUSTIC &ge; 95% COINCIDENCIA</span>
+        </div>
+
+        <div class="feature-card purple">
+          <div class="feature-icon-wrap">🎚️</div>
+          <h3 class="feature-title">3. Variantes & Remasterizaciones</h3>
+          <p class="feature-desc">
+            Aísla de forma inteligente canciones que comparten la misma melodía pero con distinta masterización, cortes de radio edit o versiones en vivo para revisión detallada.
+          </p>
+          <span class="feature-badge-mini">POSSIBLE_DUPLICATE (80-94%)</span>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">🔬</div>
+          <h3 class="feature-title">4. Puntuación Inteligente (0-100)</h3>
+          <p class="feature-desc">
+            Evalúa frecuencia de muestreo (hasta 192 kHz), profundidad de bits (16 vs 24 bits), rolloff espectral genuino e integridad temporal para recomendar siempre la mejor copia.
+          </p>
+          <span class="feature-badge-mini">QUALITY SCORING ENGINE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety Guarantees -->
+  <section class="section">
+    <div class="container">
+      <div class="safety-banner">
+        <div>
+          <span class="section-tag" style="color:var(--emerald);">Paz Mental Absoluta</span>
+          <h2 style="font-size:2.2rem; margin-bottom:16px;">Tus archivos de música están 100% seguros</h2>
+          <p style="color:var(--text-muted); font-size:1.02rem; margin-bottom:24px;">
+            Diseñado con estándares bancarios para coleccionistas con bibliotecas irremplazables. AudioClean Pro incorpora salvaguardas que impiden cualquier pérdida accidental de datos.
+          </p>
+          <a href="#pricing" class="btn btn-primary trigger-buy-modal" data-plan="Pro Lifetime">Proteger Mi Biblioteca</a>
+        </div>
+
+        <div class="safety-points">
+          <div class="safety-point">
+            <div class="safety-point-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <div>
+              <div class="safety-point-title">Protección de Copia Única (Bloqueo Automático)</div>
+              <div class="safety-point-desc">El algoritmo bloquea activamente cualquier intento de eliminar todas las copias; siempre preserva al menos una versión intacta.</div>
+            </div>
+          </div>
+
+          <div class="safety-point">
+            <div class="safety-point-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+            </div>
+            <div>
+              <div class="safety-point-title">Modo Simulación (Dry-Run) con Verificación SHA-256</div>
+              <div class="safety-point-desc">Prueba cualquier operación sin tocar un solo byte. Al mover archivos, se verifica la suma criptográfica antes de retirar el origen.</div>
+            </div>
+          </div>
+
+          <div class="safety-point">
+            <div class="safety-point-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div>
+              <div class="safety-point-title">100% Offline: Cero Nube, Cero Telemetría</div>
+              <div class="safety-point-desc">Tu música y metadatos se procesan íntegramente en tu CPU. No requiere internet para funcionar ni envía nada a servidores externos.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive ROI Storage Calculator -->
+  <section id="calculator" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Calculadora de Ahorro</span>
+        <h2 class="section-title">¿Cuánto espacio y dinero <span class="gradient-text-cyan">recuperarás</span>?</h2>
+        <p class="section-desc">
+          Las bibliotecas de música acumulan entre un 15% y un 25% de pistas redundantes o versiones duplicadas. Ajusta el tamaño de tu colección para estimar tu recuperación inmediata de disco SSD.
+        </p>
+      </div>
+
+      <div class="calculator-card">
+        <div class="calc-controls">
+          <div class="calc-group">
+            <label>
+              <span>Tamaño de tu colección:</span>
+              <span id="trackCountVal" class="calc-value-display">25.000 canciones</span>
+            </label>
+            <input type="range" id="trackCountSlider" class="calc-slider" min="1000" max="150000" step="1000" value="25000">
+          </div>
+
+          <div class="calc-group">
+            <label>Formato predominante en tu disco:</label>
+            <select id="formatSelect" style="width:100%; padding:14px 18px; background:var(--bg-dark); border:1px solid var(--border-card); border-radius:var(--radius-sm); color:var(--text-main); font-family:var(--font-main); font-size:1rem; outline:none;">
+              <option value="mixed">Colección Mixta (MP3 320kbps + FLAC + M4A)</option>
+              <option value="flac">Alta Fidelidad / Audiófilo (Principalmente FLAC / WAV)</option>
+              <option value="mp3">Comprimido / Portátil (Principalmente MP3 / AAC)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="calc-result-box">
+          <div class="calc-result-title">Espacio Duplicado Estimado</div>
+          <div id="calcResultGb" class="calc-result-number">~97 GB</div>
+          <div class="calc-result-sub">Espacio libre que volverás a tener disponible</div>
+
+          <div class="calc-metrics-row">
+            <div>
+              <div id="calcResultMoney" class="calc-submetric-val">~$28 USD</div>
+              <div class="calc-submetric-label">Ahorro en Almacenamiento SSD</div>
+            </div>
+            <div>
+              <div id="calcResultTime" class="calc-submetric-val">1 min 18s</div>
+              <div class="calc-submetric-label">Tiempo Estimado de Escaneo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Licencias y Precios</span>
+        <h2 class="section-title">Una inversión única para una <span class="gradient-text-cyan">colección impecable</span></h2>
+        <p class="section-desc">Sin suscripciones recurrentes ni costos ocultos. Paga una vez y disfruta de tu biblioteca de audio limpia para siempre.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Personal License -->
+        <div class="pricing-card">
+          <h3 class="plan-name">Licencia Personal</h3>
+          <p class="plan-desc">Ideal para amantes de la música que desean ordenar su colección en su equipo principal.</p>
+
+          <div class="plan-price-wrap">
+            <span class="plan-currency">$</span>
+            <span class="plan-amount">24</span>
+            <span style="font-size:1.2rem; font-weight:700;">.99</span>
+          </div>
+          <div class="plan-billing-info">Pago único • Licencia perpetua para 1 PC</div>
+
+          <ul class="plan-features-list">
+            <li class="plan-feature-item">
+              <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Válido para <strong>1 PC con Windows</strong></span>
+            </li>
+            <li class="plan-feature-item">
+              <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Detección de duplicados exactos y acústicos</span>
+            </li>
+            <li class="plan-feature-item">
+              <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Comparador A/B Side-by-Side en vivo</span>
+            </li>
+            <li class="plan-feature-item">
+              <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Soporte multiformato (MP3, FLAC, WAV, M4A...)</span>
+            </li>
+            <li class="plan-feature-item">
+              <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Actualizaciones gratuitas durante 1 año</span>
+            </li>
+          </ul>
+
+          <button class="btn btn-secondary btn-lg trigger-buy-modal" data-plan="Personal">
+            Elegir Plan Personal
+          </button>
+        </div>
+
+        <!-- Pro Lifetime License (Featured) -->
+        <div class="pricing-card featured">
+          <div class="popular-badge">MÁS ELEGIDO POR DJS Y ESTUDIOS</div>
+          <h3 class="plan-name">Pro Studio Lifetime</h3>
+          <p class="plan-desc">La solución definitiva con auditoría espectral FFT y rendimiento extremo ilimitado.</p>
+
+          <div class="plan-price-wrap">
+            <span class="plan-currency">$</span>
+            <span class="plan-amount">49</span>
+            <span style="font-size:1.2rem; font-weight:700;">.99</span>
+          </div>
+          <div class="plan-billing-info">Pago único • Acceso de por vida sin mensualidades</div>
+
+          <ul class="plan-features-list">
+            <li class="plan-feature-item">
+              <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Válido para <strong>hasta 3 PCs</strong> (Desktop + Laptop DJ)</span>
+            </li>
+            <li class="plan-feature-item">
+              <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Auditoría Espectral FFT:</strong> Detección de Falsos FLAC</span>
+            </li>
+            <li class="plan-feature-item">
+              <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Indexación LSH Streaming (Más de 100,000+ pistas)</span>
+            </li>
+            <li class="plan-feature-item">
+              <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Modo Dual: Interfaz Gráfica (PyQt6) + Consola CLI</span>
+            </li>
+            <li class="plan-feature-item">
+              <svg class="check-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Actualizaciones de por vida</strong> y soporte prioritario VIP</span>
+            </li>
+          </ul>
+
+          <button class="btn btn-primary btn-lg trigger-buy-modal" data-plan="Pro Lifetime">
+            Comprar Licencia Pro Lifetime
+          </button>
+        </div>
+      </div>
+
+      <div class="pricing-guarantee">
+        <svg class="guarantee-badge-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <span>Garantía incondicional de satisfacción: Reembolso del 100% de tu dinero dentro de los primeros 30 días si no quedas encantado.</span>
+      </div>
+
+      <div class="payment-methods-strip">
+        <span>Pago 100% Seguro con cifrado SSL de 256-bit</span>
+        <span>•</span>
+        <span>Stripe • Visa • Mastercard • PayPal • Apple Pay</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Preguntas Frecuentes</span>
+        <h2 class="section-title">Todo lo que necesitas saber</h2>
+      </div>
+
+      <div class="faq-wrap">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Es un pago único o una suscripción mensual?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            Es un <strong>pago único</strong>. No creemos en cobrar suscripciones mensuales por software que corre en tu propia máquina. Pagas tu licencia una sola vez y el programa te pertenecerá para siempre.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cuáles son los requisitos de sistema para mi PC?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            AudioClean Pro funciona de forma nativa en <strong>Windows 10 y Windows 11 (64-bit)</strong>. Requiere un mínimo de 4 GB de RAM y procesador multi-núcleo estándar. Su motor optimizado con streaming LSH fue diseñado para funcionar con total fluidez tanto en discos mecánicos HDD como en unidades SSD NVMe ultra-rápidas.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Hay riesgo de que el programa borre canciones por error?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            No. AudioClean Pro incorpora <strong>Protección de Copia Única</strong> (es físicamente imposible marcar para eliminar todos los archivos de un grupo; siempre se preserva al menos uno). Además, todas las detecciones acústicas exigen confirmación del usuario, y el modo simulación (Dry-Run) te permite verificar cualquier cambio antes de ejecutarlo.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué formatos de audio son compatibles?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            AudioClean Pro soporta todos los formatos de audio de consumo y profesionales: <code>.mp3</code>, <code>.flac</code>, <code>.wav</code>, <code>.m4a</code>, <code>.ogg</code>, <code>.aac</code>, <code>.wma</code> y <code>.opus</code>. Puede comparar pistas entre formatos diferentes (por ejemplo, comparar un MP3 contra un FLAC para detectar que son la misma grabación).
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Cómo recibo mi clave de licencia tras realizar la compra?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            Inmediatamente después de completar el pago seguro, recibirás tu código de activación y el enlace de descarga directa en tu correo electrónico. Solo tendrás que abrir el programa, ingresar la clave y tu versión Pro quedará activada al instante.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Call to Action -->
+  <section class="final-cta">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Limpia tu colección con la herramienta que usan los audiófilos</h2>
+        <p>Ahorra cientos de gigabytes en tu disco duro y disfruta de una biblioteca musical sin duplicados, con metadatos ordenados y calidad 100% genuina.</p>
+
+        <div class="hero-actions" style="margin-bottom:0;">
+          <a href="#pricing" class="btn btn-primary btn-lg trigger-buy-modal" data-plan="Pro Lifetime">
+            Comprar AudioClean Pro — $49.99
+          </a>
+          <a href="#demo" class="btn btn-secondary btn-lg trigger-demo-modal">
+            Descargar Demo Gratuita
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div style="display:flex; align-items:center; gap:10px;">
+            <img src="assets/app_icon.png" alt="Logo" style="width:30px; height:30px;">
+            <span style="font-family:var(--font-heading); font-size:1.2rem; font-weight:800; color:var(--text-pure);">AudioClean PRO</span>
+          </div>
+          <p>La herramienta de escritorio de máxima precisión para detección acústica de duplicados, auditoría espectral FFT y limpieza segura de música.</p>
+        </div>
+
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <h5>Producto</h5>
+            <ul>
+              <li><a href="#features">Características</a></li>
+              <li><a href="#ab-player">Comparador A/B</a></li>
+              <li><a href="#spectral">Detector Fake FLAC</a></li>
+              <li><a href="#pricing">Planes de Precios</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Soporte</h5>
+            <ul>
+              <li><a href="#faq">Preguntas Frecuentes</a></li>
+              <li><a href="mailto:soporte@audiocleanpro.com">Contacto de Soporte</a></li>
+              <li><a href="#demo" class="trigger-demo-modal">Descargar Demo</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Legal</h5>
+            <ul>
+              <li><a href="#">Términos del Servicio</a></li>
+              <li><a href="#">Política de Privacidad</a></li>
+              <li><a href="#">Política de Reembolsos</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 AudioClean Pro. Todos los derechos reservados.</div>
+        <div>Diseñado con tecnología acústica de alta precisión. 100% Offline y Seguro.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal: Descargar Demo Gratuita -->
+  <div id="demoModal" class="modal-backdrop">
+    <div class="modal-content">
+      <button class="modal-close-btn" title="Cerrar">&times;</button>
+      <div class="modal-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </div>
+      <h3 class="modal-title">Descargar Demo de AudioClean</h3>
+      <p class="modal-desc">Prueba gratis todas las capacidades de detección de duplicados acústicos y auditoría espectral en tu propio equipo.</p>
+
+      <div class="modal-specs-box">
+        <div class="modal-specs-row">
+          <span style="color:var(--text-dim)">Sistema Operativo:</span>
+          <span style="color:var(--text-pure)">Windows 10 / 11 (64-bit)</span>
+        </div>
+        <div class="modal-specs-row">
+          <span style="color:var(--text-dim)">Tamaño del Instalador:</span>
+          <span style="color:var(--text-pure)">~32 MB (Autónomo .exe)</span>
+        </div>
+        <div class="modal-specs-row">
+          <span style="color:var(--text-dim)">Seguridad:</span>
+          <span style="color:var(--emerald)">100% Libre de Virus & Spyware</span>
+        </div>
+      </div>
+
+      <button id="startDownloadBtn" class="btn btn-primary btn-lg" style="width:100%; margin-bottom:12px;">
+        Descargar Ahora (audioclean-setup-trial.exe)
+      </button>
+
+      <div style="text-align:center; font-size:0.8rem; color:var(--text-dim);">
+        La demo permite escanear bibliotecas completas y preescuchar duplicados con el reproductor A/B.
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Comprar Licencia / Checkout -->
+  <div id="buyModal" class="modal-backdrop">
+    <div class="modal-content">
+      <button class="modal-close-btn" title="Cerrar">&times;</button>
+      <div class="modal-icon" style="background:rgba(16, 185, 129, 0.15); border-color:var(--emerald); color:var(--emerald);">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      </div>
+      <h3 class="modal-title">Completar Pedido Seguro</h3>
+      <p class="modal-desc">Obtén tu clave de activación de por vida al instante. Transacción cifrada de 256 bits.</p>
+
+      <div class="modal-specs-box">
+        <div class="modal-specs-row">
+          <span id="checkoutPlanName" style="color:var(--text-pure); font-weight:700;">AudioClean Pro Studio Lifetime (3 PCs)</span>
+          <span id="checkoutPlanPrice" style="color:var(--cyan); font-weight:700; font-size:1.1rem;">$49.99 USD</span>
+        </div>
+        <div class="modal-specs-row" style="margin-top:8px;">
+          <span style="color:var(--text-dim)">Garantía:</span>
+          <span style="color:var(--emerald)">30 Días de Reembolso Garantizado</span>
+        </div>
+      </div>
+
+      <!-- Checkout CTA button ready to link to Stripe / Gumroad / Lemon Squeezy -->
+      <a href="https://checkout.stripe.com" target="_blank" class="btn btn-primary btn-lg" style="width:100%; text-decoration:none; margin-bottom:12px;">
+        Continuar al Pago Seguro (Stripe / Tarjeta)
+      </a>
+
+      <div style="text-align:center; font-size:0.8rem; color:var(--text-dim);">
+        Recibirás tu clave de licencia y factura oficial inmediatamente en tu correo electrónico.
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/visualizer.js"></script>
+  <script src="js/ab_simulator.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

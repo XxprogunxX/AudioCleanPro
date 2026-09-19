@@ -132,12 +132,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!modal) return;
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
+    if (modal === demoModal && window.AudioCleanVault) {
+      window.AudioCleanVault.reset();
+    }
   }
 
   function closeModal(modal) {
     if (!modal) return;
     modal.classList.remove('active');
     document.body.style.overflow = '';
+    if (modal === demoModal && window.AudioCleanVault) {
+      window.AudioCleanVault.reset();
+    }
   }
 
   demoBtns.forEach(btn => {
@@ -184,21 +190,4 @@ document.addEventListener('DOMContentLoaded', () => {
       closeModal(buyModal);
     }
   });
-
-  // Demo download simulated trigger
-  const startDownloadBtn = document.getElementById('startDownloadBtn');
-  if (startDownloadBtn) {
-    startDownloadBtn.addEventListener('click', () => {
-      startDownloadBtn.textContent = 'Iniciando descarga...';
-      startDownloadBtn.style.opacity = '0.7';
-      setTimeout(() => {
-        startDownloadBtn.innerHTML = `
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="20 6 9 17 4 12"/>
-          </svg> ¡Descarga completada!`;
-        startDownloadBtn.style.opacity = '1';
-        startDownloadBtn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
-      }, 1500);
-    });
-  }
 });

@@ -116,7 +116,7 @@
             <polyline points="7 10 12 15 17 10"/>
             <line x1="12" y1="15" x2="12" y2="3"/>
           </svg>
-          Descargar Demo Gratuita
+          Descargar Demo Gratuita (3 Escaneos)
         </a>
       </div>
 
@@ -620,6 +620,16 @@
             Inmediatamente después de completar el pago seguro, recibirás tu código de activación y el enlace de descarga directa en tu correo electrónico. Solo tendrás que abrir el programa, ingresar la clave y tu versión Pro quedará activada al instante.
           </div>
         </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>¿Qué incluye la versión de prueba gratuita?</span>
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            La versión de prueba de AudioClean te permite completar <strong>hasta 3 escaneos completos</strong> de tu biblioteca musical sin costo ni compromiso alguno. Puedes analizar miles de pistas, auditar duplicados y probar las herramientas de comparación A/B y análisis espectral. Una vez comprobada su efectividad, puedes adquirir tu licencia Pro para disfrutar de escaneos y limpiezas ilimitadas.
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -636,7 +646,7 @@
             Comprar AudioClean Pro — $49.99
           </a>
           <a href="#demo" class="btn btn-secondary btn-lg trigger-demo-modal">
-            Descargar Demo Gratuita
+            Descargar Demo Gratuita (3 Escaneos)
           </a>
         </div>
       </div>
@@ -691,37 +701,89 @@
     </div>
   </footer>
 
-  <!-- Modal: Descargar Demo Gratuita -->
+  <!-- Modal: Descargar Demo Gratuita y Segura -->
   <div id="demoModal" class="modal-backdrop">
-    <div class="modal-content">
+    <div class="modal-content modal-secure-vault">
       <button class="modal-close-btn" title="Cerrar">&times;</button>
-      <div class="modal-icon">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <div class="modal-icon secure-shield-glow">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <path d="M9 12l2 2 4-4"/>
+        </svg>
       </div>
-      <h3 class="modal-title">Descargar Demo de AudioClean</h3>
-      <p class="modal-desc">Prueba gratis todas las capacidades de detección de duplicados acústicos y auditoría espectral en tu propio equipo.</p>
+      <h3 class="modal-title">Descarga Oficial Verificada</h3>
+      <p class="modal-desc">Obtén la versión oficial de evaluación <strong>AudioClean Pro v1.0.3 (Versión de Prueba)</strong> protegida contra manipulaciones e inyecciones de código.</p>
 
       <div class="modal-specs-box">
         <div class="modal-specs-row">
           <span style="color:var(--text-dim)">Sistema Operativo:</span>
-          <span style="color:var(--text-pure)">Windows 10 / 11 (64-bit)</span>
+          <span style="color:var(--text-pure); font-weight:600;">Windows 10 / 11 (64-bit)</span>
+        </div>
+        <div class="modal-specs-row">
+          <span style="color:var(--text-dim)">Capacidad de Evaluación:</span>
+          <span style="color:var(--cyan); font-weight:600;">3 Escaneos Completos Sin Límite de Canciones</span>
         </div>
         <div class="modal-specs-row">
           <span style="color:var(--text-dim)">Tamaño del Instalador:</span>
-          <span style="color:var(--text-pure)">~32 MB (Autónomo .exe)</span>
+          <span style="color:var(--text-pure); font-weight:600;">~226 MB (Instalador Autónomo)</span>
         </div>
         <div class="modal-specs-row">
-          <span style="color:var(--text-dim)">Seguridad:</span>
-          <span style="color:var(--emerald)">100% Libre de Virus & Spyware</span>
+          <span style="color:var(--text-dim)">Integridad SHA-256:</span>
+          <code class="sha256-badge" title="8f89536b2d0bb2baae282bfdc9d43daca22853427eba63267f17626afad28890">8f8953...ad28890</code>
+        </div>
+        <div class="modal-specs-row">
+          <span style="color:var(--text-dim)">Firma &amp; Seguridad:</span>
+          <span style="color:var(--emerald); font-weight:600; display:inline-flex; align-items:center; gap:5px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            100% Limpio (Sin Adware / Telemetría)
+          </span>
         </div>
       </div>
 
-      <button id="startDownloadBtn" class="btn btn-primary btn-lg" style="width:100%; margin-bottom:12px;">
-        Descargar Ahora (audioclean-setup-trial.exe)
-      </button>
+      <!-- Slide-to-Unlock Cyberpunk Interaction -->
+      <div class="secure-vault-card" id="secureVaultCard">
+        <div class="vault-status-header">
+          <div class="vault-security-indicator">
+            <span class="vault-pulse-dot"></span>
+            <span class="vault-status-text" id="vaultStatusText">PROTECCIÓN BIOMÉTRICA &amp; PoW ACTIVA</span>
+          </div>
+          <span class="vault-version-tag">BUILD v1.0.3 (TRIAL)</span>
+        </div>
 
-      <div style="text-align:center; font-size:0.8rem; color:var(--text-dim);">
-        La demo permite escanear bibliotecas completas y preescuchar duplicados con el reproductor A/B.
+        <div class="slide-track-wrapper">
+          <div class="slide-track" id="secureSlideTrack">
+            <div class="slide-fill" id="secureSlideFill"></div>
+            <span class="slide-track-label" id="secureSlideLabel">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="slide-arrow-anim"><polyline points="9 18 15 12 9 6"/></svg>
+              Desliza para autorizar descarga segura
+            </span>
+            <div class="slide-thumb" id="secureSlideThumb" role="slider" aria-label="Deslizar para autorizar descarga" tabindex="0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="thumb-shield-icon">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Verification Steps Feedback -->
+        <div class="vault-verification-steps" id="vaultSteps" style="display:none;">
+          <div class="vault-step active" id="vStep1">
+            <div class="step-spinner"></div>
+            <span>Validando interacción física humana...</span>
+          </div>
+          <div class="vault-step" id="vStep2">
+            <div class="step-spinner"></div>
+            <span>Calculando desafío criptográfico SHA-256...</span>
+          </div>
+          <div class="vault-step" id="vStep3">
+            <div class="step-spinner"></div>
+            <span>Ensamblando paquete oficial seguro...</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; font-size:0.8rem; color:var(--text-dim); margin-top:14px;">
+        La descarga comenzará automáticamente en tu navegador una vez autorizada la interacción.
       </div>
     </div>
   </div>
@@ -734,7 +796,7 @@
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
       </div>
       <h3 class="modal-title">Completar Pedido Seguro</h3>
-      <p class="modal-desc">Obtén tu clave de activación de por vida al instante. Transacción cifrada de 256 bits.</p>
+      <p class="modal-desc">Obtén tu clave de activación de por vida al instante y acceso a la versión oficial <strong>Audio Cleaner Pro v1.0.4</strong> con escaneos ilimitados.</p>
 
       <div class="modal-specs-box">
         <div class="modal-specs-row">
@@ -742,6 +804,10 @@
           <span id="checkoutPlanPrice" style="color:var(--cyan); font-weight:700; font-size:1.1rem;">$49.99 USD</span>
         </div>
         <div class="modal-specs-row" style="margin-top:8px;">
+          <span style="color:var(--text-dim)">Versión Pro:</span>
+          <span style="color:var(--text-pure); font-weight:600;">v1.0.4 Oficial (Ilimitada)</span>
+        </div>
+        <div class="modal-specs-row" style="margin-top:4px;">
           <span style="color:var(--text-dim)">Garantía:</span>
           <span style="color:var(--emerald)">30 Días de Reembolso Garantizado</span>
         </div>
@@ -761,6 +827,7 @@
   <!-- Scripts -->
   <script src="js/visualizer.js"></script>
   <script src="js/ab_simulator.js"></script>
+  <script src="js/secure_vault.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

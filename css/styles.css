@@ -101,12 +101,14 @@ h1, h2, h3, h4, .brand-title {
 .gradient-text-cyan {
   background: linear-gradient(135deg, #FFFFFF 20%, #00E5FF 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-text-purple {
   background: linear-gradient(135deg, #00E5FF 0%, #8B5CF6 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1082,6 +1084,7 @@ h1, h2, h3, h4, .brand-title {
   border-radius: 4px;
   outline: none;
   -webkit-appearance: none;
+  appearance: none;
   cursor: pointer;
 }
 

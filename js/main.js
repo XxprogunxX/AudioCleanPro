@@ -1,6 +1,6 @@
 /**
  * AUDIOCLEAN PRO — MAIN COMMERCIAL INTERACTION LOGIC
- * Navigation, Storage ROI Calculator, FAQ Accordion & Modals
+ * Navigation, FAQ Accordion & Modals
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -38,60 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-
-  // --- 2. Storage Recovery ROI Calculator ---
-  const trackCountSlider = document.getElementById('trackCountSlider');
-  const trackCountVal = document.getElementById('trackCountVal');
-  const formatSelect = document.getElementById('formatSelect');
-  const calcResultGb = document.getElementById('calcResultGb');
-  const calcResultMoney = document.getElementById('calcResultMoney');
-  const calcResultTime = document.getElementById('calcResultTime');
-
-  function updateCalculator() {
-    if (!trackCountSlider) return;
-
-    const count = parseInt(trackCountSlider.value, 10);
-    const format = formatSelect ? formatSelect.value : 'mixed';
-
-    trackCountVal.textContent = count.toLocaleString('es-ES') + ' canciones';
-
-    // Average file sizes in MB
-    let avgMbPerSong = 22; // default mixed
-    if (format === 'flac') avgMbPerSong = 38;
-    if (format === 'mp3') avgMbPerSong = 9;
-
-    // Typical duplicate rate in large audio libraries: ~18%
-    const duplicateRate = 0.18;
-    const duplicatesCount = Math.round(count * duplicateRate);
-    const recoveredMb = duplicatesCount * avgMbPerSong;
-    const recoveredGb = Math.round(recoveredMb / 1024);
-
-    // Cost saved: average high-speed SSD storage + cloud backup ($0.14 per GB/year)
-    const dollarsSaved = Math.max(12, Math.round(recoveredGb * 0.14));
-
-    // Scan time with AudioClean bounded LSH streaming engine: ~350 files per second
-    const scanSeconds = Math.max(5, Math.round(count / 320));
-    let timeStr = `${scanSeconds} seg`;
-    if (scanSeconds >= 60) {
-      const min = Math.floor(scanSeconds / 60);
-      const sec = scanSeconds % 60;
-      timeStr = `${min} min ${sec > 0 ? sec + 's' : ''}`;
-    }
-
-    calcResultGb.textContent = `~${recoveredGb} GB`;
-    calcResultMoney.textContent = `~$${dollarsSaved} USD`;
-    calcResultTime.textContent = timeStr;
-  }
-
-  if (trackCountSlider) {
-    trackCountSlider.addEventListener('input', updateCalculator);
-    if (formatSelect) {
-      formatSelect.addEventListener('change', updateCalculator);
-    }
-    updateCalculator();
-  }
-
-  // --- 3. Commercial FAQ Accordion ---
+  // --- 2. Commercial FAQ Accordion ---
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(item => {
     const questionBtn = item.querySelector('.faq-question');
@@ -121,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (firstAns) firstAns.style.maxHeight = firstAns.scrollHeight + 'px';
   }
 
-  // --- 4. Modals (Demo Download & Purchase Checkout) ---
+  // --- 3. Modals (Demo Download & Purchase Checkout) ---
   const demoModal = document.getElementById('demoModal');
   const buyModal = document.getElementById('buyModal');
   const demoBtns = document.querySelectorAll('.trigger-demo-modal');
